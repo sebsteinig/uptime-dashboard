@@ -52,11 +52,10 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Generate graphs
-        uses: upptime/uptime-monitor@v1.41.0
+        uses: benc-uk/workflow-dispatch@v1
         with:
-          command: "graphs"
-        env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          workflow: Graphs CI
+          token: ${{ secrets.GH_PAT || github.token }}
       - name: Generate site
         uses: upptime/uptime-monitor@v1.41.0
         with:
