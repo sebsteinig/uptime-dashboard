@@ -43,4 +43,3 @@ status-website:
 # - assignees: for downtime issue assignment
 # - notifications: Slack, email, etc.
 # - workflowSchedule: customize check frequency
-
