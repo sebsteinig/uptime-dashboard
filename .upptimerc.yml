@@ -53,47 +53,66 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  # Custom grouping - headers and spacing between groups (Upptime has no native groups)
   customFootHtml: |
     <style>
-    .upptime-group-header { font-size: 1.15rem; font-weight: 600; margin: 2rem 0 0.75rem 0; padding-bottom: 0.35rem; border-bottom: 2px solid var(--color-4, #ddd); color: var(--body-text-color, #333); }
-    .upptime-group-header:first-child { margin-top: 0; }
+    .upptime-group-header {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.5rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--nav-border-bottom-color, #ddd);
+      color: var(--body-text-color, #333);
+      letter-spacing: 0.01em;
+    }
+    .upptime-group-header:first-of-type {
+      margin-top: 0.5rem;
+    }
     </style>
     <script>
     (function() {
-      var slugToGroup = { "methane-explorer-prod":"CAMS services (PROD)", "cams-data-sites":"CAMS services (PROD)", "methane-explorer-dev":"CAMS services (DEV)", "climate-archive":"Climate Archive", "climate-archive-java-api":"Climate Archive", "climate-archive-flask-api":"Climate Archive" };
-      function getSlug(el) { var h = (el.getAttribute("href") || el.href || ""); var m = h.match(/(?:^|\/)history\/([^/?#]+)/); return m ? m[1] : null; }
+      var slugGroups = [
+        { slugs: ["methane-explorer-prod","cams-data-sites","vairify","fire-watch","gfas-api-health","zarr-globe"], label: "CAMS Services (PROD)" },
+        { slugs: ["methane-explorer-dev"], label: "CAMS Services (DEV)" },
+        { slugs: ["climate-archive","climate-archive-java-api","climate-archive-flask-api"], label: "Climate Archive" }
+      ];
+      var slugToGroup = {};
+      slugGroups.forEach(function(g) {
+        g.slugs.forEach(function(s) { slugToGroup[s] = g.label; });
+      });
+      function getSlug(el) {
+        var h = el.getAttribute("href") || "";
+        var m = h.match(/history\/([^/?#]+)/);
+        return m ? m[1] : null;
+      }
       function addGroupHeaders() {
-        var links = document.querySelectorAll('a[href*="history"]');
+        var links = document.querySelectorAll('a[href*="/history/"]');
         if (!links.length) return false;
-        var lastGroup = null, inserted = 0;
+        var existing = document.querySelectorAll('.upptime-group-header');
+        for (var e = 0; e < existing.length; e++) existing[e].remove();
+        var lastGroup = null;
         for (var i = 0; i < links.length; i++) {
           var slug = getSlug(links[i]);
           var group = slug ? slugToGroup[slug] : null;
           if (group && group !== lastGroup) {
             lastGroup = group;
-            var card = links[i].closest("article") || links[i].closest("div");
+            var card = links[i].closest("div.site-status") || links[i].closest("article") || links[i].closest("div");
             if (card && card.parentNode) {
-              var prev = card.previousElementSibling;
-              if (!prev || !prev.classList.contains("upptime-group-header")) {
-                var h = document.createElement("div");
-                h.className = "upptime-group-header";
-                h.textContent = group;
-                card.parentNode.insertBefore(h, card);
-                inserted++;
-              }
+              var h = document.createElement("div");
+              h.className = "upptime-group-header";
+              h.textContent = group;
+              card.parentNode.insertBefore(h, card);
             }
           }
         }
-        return inserted > 0;
+        return true;
       }
       function run() {
-        var n = 0;
-        function tryAdd() {
-          if (addGroupHeaders() || n++ > 40) return;
-          setTimeout(tryAdd, 250);
-        }
-        setTimeout(tryAdd, 500);
+        var attempts = 0;
+        var timer = setInterval(function() {
+          if (addGroupHeaders() || attempts++ > 50) clearInterval(timer);
+        }, 200);
+        var observer = new MutationObserver(function() { addGroupHeaders(); });
+        observer.observe(document.body, { childList: true, subtree: true });
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", run);
       else run();
