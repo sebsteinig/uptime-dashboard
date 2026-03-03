@@ -53,71 +53,31 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  customFootHtml: |
+  # Pure CSS grouping: uses nth-of-type to target sites by position.
+  # Sites order: 1-6 = CAMS PROD, 7 = CAMS DEV, 8-10 = Climate Archive.
+  # If you add/remove/reorder sites, update the nth-of-type numbers below.
+  customHeadHtml: |
     <style>
-    .upptime-group-header {
-      font-size: 1.2rem;
+    section > a:nth-of-type(7),
+    section > a:nth-of-type(8) {
+      margin-top: 2.5rem;
+    }
+    section > a:nth-of-type(1)::before,
+    section > a:nth-of-type(7)::before,
+    section > a:nth-of-type(8)::before {
+      display: block;
+      font-size: 1.1rem;
       font-weight: 700;
-      margin: 2.5rem 0 0.5rem 0;
-      padding-bottom: 0.4rem;
-      border-bottom: 2px solid var(--nav-border-bottom-color, #ddd);
-      color: var(--body-text-color, #333);
-      letter-spacing: 0.01em;
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.6rem;
+      border-bottom: 2px solid var(--nav-border-bottom-color, rgba(255,255,255,0.15));
+      color: var(--body-text-color, #ccc);
+      letter-spacing: 0.02em;
     }
-    .upptime-group-header:first-of-type {
-      margin-top: 0.5rem;
-    }
+    section > a:nth-of-type(1)::before  { content: "CAMS Services (PROD)"; }
+    section > a:nth-of-type(7)::before  { content: "CAMS Services (DEV)"; }
+    section > a:nth-of-type(8)::before  { content: "Climate Archive"; }
     </style>
-    <script>
-    (function() {
-      var slugGroups = [
-        { slugs: ["methane-explorer-prod","cams-data-sites","vairify","fire-watch","gfas-api-health","zarr-globe"], label: "CAMS Services (PROD)" },
-        { slugs: ["methane-explorer-dev"], label: "CAMS Services (DEV)" },
-        { slugs: ["climate-archive","climate-archive-java-api","climate-archive-flask-api"], label: "Climate Archive" }
-      ];
-      var slugToGroup = {};
-      slugGroups.forEach(function(g) {
-        g.slugs.forEach(function(s) { slugToGroup[s] = g.label; });
-      });
-      function getSlug(el) {
-        var h = el.getAttribute("href") || "";
-        var m = h.match(/history\/([^/?#]+)/);
-        return m ? m[1] : null;
-      }
-      function addGroupHeaders() {
-        var links = document.querySelectorAll('a[href*="/history/"]');
-        if (!links.length) return false;
-        var existing = document.querySelectorAll('.upptime-group-header');
-        for (var e = 0; e < existing.length; e++) existing[e].remove();
-        var lastGroup = null;
-        for (var i = 0; i < links.length; i++) {
-          var slug = getSlug(links[i]);
-          var group = slug ? slugToGroup[slug] : null;
-          if (group && group !== lastGroup) {
-            lastGroup = group;
-            var card = links[i].closest("div.site-status") || links[i].closest("article") || links[i].closest("div");
-            if (card && card.parentNode) {
-              var h = document.createElement("div");
-              h.className = "upptime-group-header";
-              h.textContent = group;
-              card.parentNode.insertBefore(h, card);
-            }
-          }
-        }
-        return true;
-      }
-      function run() {
-        var attempts = 0;
-        var timer = setInterval(function() {
-          if (addGroupHeaders() || attempts++ > 50) clearInterval(timer);
-        }, 200);
-        var observer = new MutationObserver(function() { addGroupHeaders(); });
-        observer.observe(document.body, { childList: true, subtree: true });
-      }
-      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", run);
-      else run();
-    })();
-    </script>
 
 # See https://upptime.js.org/docs/configuration for more options
 # - assignees: for downtime issue assignment
