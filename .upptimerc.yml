@@ -6,20 +6,24 @@ repo: uptime-dashboard
 
 sites:
   # Websites
-  - name: Methane Explorer (Atmosphere)
+  - name: Methane Explorer (PROD)
     url: https://apps.atmosphere.copernicus.eu/methane-explorer/
-  - name: Methane Explorer (Climate)
+  - name: Methane Explorer (DEV)
     url: https://apps.copernicus-climate.eu/methane-explorer/
+    headers:
+      - "Authorization: Basic $Methane_Explorer_DEV_AUTH"
+  - name: vAirify
+    url: http://64.225.143.231/city/summary
   - name: Fire Watch
     url: https://apps.atmosphere.copernicus.eu/fire-watch/
+    headers:
+      - "Authorization: Basic $FIRE_WATCH_AUTH"
+  - name: GFAS API Health
+    url: https://apps.atmosphere.copernicus.eu/gfas/api/api/health/
   - name: Zarr Globe
     url: https://apps.atmosphere.copernicus.eu/zarr-globe
   - name: Climate Archive
     url: https://climatearchive.org
-
-  # APIs
-  - name: GFAS API Health
-    url: https://apps.atmosphere.copernicus.eu/gfas/api/api/health/
   - name: Climate Archive API
     url: https://api.climatearchive.org:8443/getData?lat=37.10&lon=9.5&model=tfksu
 
