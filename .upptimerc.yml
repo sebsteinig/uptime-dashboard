@@ -5,13 +5,12 @@ owner: sebsteinig
 repo: uptime-dashboard
 
 sites:
-  # Websites
+  # CAMS services (PROD)
   - name: Methane Explorer (PROD)
     url: https://apps.atmosphere.copernicus.eu/methane-explorer/
-  - name: Methane Explorer (DEV)
-    url: https://apps.copernicus-climate.eu/methane-explorer/
-    headers:
-      - "Authorization: Basic $Methane_Explorer_DEV_AUTH"
+  - name: CAMS Data Sites
+    url: https://sites.ecmwf.int/data/cams/
+    slug: cams-data-sites
   - name: vAirify
     url: http://64.225.143.231/city/summary
   - name: Fire Watch
@@ -22,6 +21,14 @@ sites:
     url: https://apps.atmosphere.copernicus.eu/gfas/api/api/health/
   - name: Zarr Globe
     url: https://apps.atmosphere.copernicus.eu/zarr-globe
+
+  # CAMS services (DEV)
+  - name: Methane Explorer (DEV)
+    url: https://apps.copernicus-climate.eu/methane-explorer/
+    headers:
+      - "Authorization: Basic $Methane_Explorer_DEV_AUTH"
+
+  # Climate Archive
   - name: Climate Archive
     url: https://climatearchive.org
   - name: Climate Archive API
@@ -38,6 +45,38 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  # Custom grouping - groups defined via inline script (Upptime has no native groups)
+  css: |
+    .upptime-group-header { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem 0; color: var(--body-text-color, #333); padding-bottom: 0.25rem; border-bottom: 2px solid var(--color-4, #ddd); }
+    .upptime-group-header:first-child { margin-top: 0; }
+  js: |
+    (function() {
+      var slugToGroup = { "methane-explorer-prod":"CAMS services (PROD)", "cams-data-sites":"CAMS services (PROD)", "methane-explorer-dev":"CAMS services (DEV)", "climate-archive":"Climate Archive", "climate-archive-api":"Climate Archive" };
+      function getSlug(el) { var m = (el.getAttribute("href")||el.href||"").match(/\/history\/([^/?#]+)/); return m ? m[1] : null; }
+      function addGroupHeaders() {
+        var links = document.querySelectorAll('a[href*="/history/"]');
+        if (!links.length) return false;
+        var lastGroup = null, parent = links[0].closest("section") || links[0].closest("main");
+        if (!parent) return false;
+        for (var i = 0; i < links.length; i++) {
+          var slug = getSlug(links[i]);
+          var group = slug ? slugToGroup[slug] : null;
+          if (group && group !== lastGroup) {
+            lastGroup = group;
+            var card = links[i].closest("article") || links[i].closest("div") || links[i].parentElement;
+            if (card) {
+              var h = document.createElement("div");
+              h.className = "upptime-group-header";
+              h.textContent = group;
+              card.parentNode.insertBefore(h, card);
+            }
+          }
+        }
+        return true;
+      }
+      function run() { var n = 0; (function t() { if (addGroupHeaders() || n++ > 25) return; setTimeout(t, 300); })(); }
+      document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", run) : run();
+    })();
 
 # See https://upptime.js.org/docs/configuration for more options
 # - assignees: for downtime issue assignment
