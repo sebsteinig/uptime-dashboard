@@ -1,36 +1,41 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime configuration - uptime monitor and status page
+# Docs: https://upptime.js.org/docs/configuration
+
+owner: sebsteinig
+repo: uptime-dashboard
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  # Websites
+  - name: Methane Explorer (Atmosphere)
+    url: https://apps.atmosphere.copernicus.eu/methane-explorer/
+  - name: Methane Explorer (Climate)
+    url: https://apps.copernicus-climate.eu/methane-explorer/
+  - name: Fire Watch
+    url: https://apps.atmosphere.copernicus.eu/fire-watch/
+  - name: Zarr Globe
+    url: https://apps.atmosphere.copernicus.eu/zarr-globe
+  - name: Climate Archive
+    url: https://climatearchive.org
+
+  # APIs
+  - name: GFAS API Health
+    url: https://apps.atmosphere.copernicus.eu/gfas/api/api/health/
+  - name: Climate Archive API
+    url: https://api.climatearchive.org:8443/getData?lat=37.10&lon=9.5&model=tfksu
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Use baseUrl for GitHub Pages (https://sebsteinig.github.io/uptime-dashboard/)
+  baseUrl: /uptime-dashboard
+  name: Status Dashboard
+  introTitle: "**Status Dashboard** — Monitoring your websites and APIs"
+  introMessage: This status page tracks the uptime and response times of Copernicus Atmosphere apps, Climate Archive, and related APIs. Powered by [Upptime](https://upptime.js.org) — GitHub Actions, Issues, and Pages.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# See https://upptime.js.org/docs/configuration for more options
+# - assignees: for downtime issue assignment
+# - notifications: Slack, email, etc.
+# - workflowSchedule: customize check frequency
