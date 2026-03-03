@@ -31,8 +31,16 @@ sites:
   # Climate Archive
   - name: Climate Archive
     url: https://climatearchive.org
-  - name: Climate Archive API
+  - name: Climate Archive Java API
     url: https://api.climatearchive.org:8443/getData?lat=37.10&lon=9.5&model=tfksu
+    slug: climate-archive-java-api
+  - name: Climate Archive Flask API
+    url: https://data.climatearchive.org/api/get_ts_data_cmip
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    body: '{"model_id":"ssp126","location":[37.10,9.5],"variable":"tas","frequency":"ym"}'
+    slug: climate-archive-flask-api
 
 status-website:
   # Use baseUrl for GitHub Pages (https://sebsteinig.github.io/uptime-dashboard/)
@@ -51,7 +59,7 @@ status-website:
     .upptime-group-header:first-child { margin-top: 0; }
   js: |
     (function() {
-      var slugToGroup = { "methane-explorer-prod":"CAMS services (PROD)", "cams-data-sites":"CAMS services (PROD)", "methane-explorer-dev":"CAMS services (DEV)", "climate-archive":"Climate Archive", "climate-archive-api":"Climate Archive" };
+      var slugToGroup = { "methane-explorer-prod":"CAMS services (PROD)", "cams-data-sites":"CAMS services (PROD)", "methane-explorer-dev":"CAMS services (DEV)", "climate-archive":"Climate Archive", "climate-archive-java-api":"Climate Archive", "climate-archive-flask-api":"Climate Archive" };
       function getSlug(el) { var m = (el.getAttribute("href")||el.href||"").match(/\/history\/([^/?#]+)/); return m ? m[1] : null; }
       function addGroupHeaders() {
         var links = document.querySelectorAll('a[href*="/history/"]');
