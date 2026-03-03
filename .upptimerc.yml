@@ -53,38 +53,52 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  # Custom grouping - groups defined via inline script (Upptime has no native groups)
-  css: |
-    .upptime-group-header { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem 0; color: var(--body-text-color, #333); padding-bottom: 0.25rem; border-bottom: 2px solid var(--color-4, #ddd); }
+  # Custom grouping - headers and spacing between groups (Upptime has no native groups)
+  customFootHtml: |
+    <style>
+    .upptime-group-header { font-size: 1.15rem; font-weight: 600; margin: 2rem 0 0.75rem 0; padding-bottom: 0.35rem; border-bottom: 2px solid var(--color-4, #ddd); color: var(--body-text-color, #333); }
     .upptime-group-header:first-child { margin-top: 0; }
-  js: |
+    </style>
+    <script>
     (function() {
       var slugToGroup = { "methane-explorer-prod":"CAMS services (PROD)", "cams-data-sites":"CAMS services (PROD)", "methane-explorer-dev":"CAMS services (DEV)", "climate-archive":"Climate Archive", "climate-archive-java-api":"Climate Archive", "climate-archive-flask-api":"Climate Archive" };
-      function getSlug(el) { var m = (el.getAttribute("href")||el.href||"").match(/\/history\/([^/?#]+)/); return m ? m[1] : null; }
+      function getSlug(el) { var h = (el.getAttribute("href") || el.href || ""); var m = h.match(/(?:^|\/)history\/([^/?#]+)/); return m ? m[1] : null; }
       function addGroupHeaders() {
-        var links = document.querySelectorAll('a[href*="/history/"]');
+        var links = document.querySelectorAll('a[href*="history"]');
         if (!links.length) return false;
-        var lastGroup = null, parent = links[0].closest("section") || links[0].closest("main");
-        if (!parent) return false;
+        var lastGroup = null, inserted = 0;
         for (var i = 0; i < links.length; i++) {
           var slug = getSlug(links[i]);
           var group = slug ? slugToGroup[slug] : null;
           if (group && group !== lastGroup) {
             lastGroup = group;
-            var card = links[i].closest("article") || links[i].closest("div") || links[i].parentElement;
-            if (card) {
-              var h = document.createElement("div");
-              h.className = "upptime-group-header";
-              h.textContent = group;
-              card.parentNode.insertBefore(h, card);
+            var card = links[i].closest("article") || links[i].closest("div");
+            if (card && card.parentNode) {
+              var prev = card.previousElementSibling;
+              if (!prev || !prev.classList.contains("upptime-group-header")) {
+                var h = document.createElement("div");
+                h.className = "upptime-group-header";
+                h.textContent = group;
+                card.parentNode.insertBefore(h, card);
+                inserted++;
+              }
             }
           }
         }
-        return true;
+        return inserted > 0;
       }
-      function run() { var n = 0; (function t() { if (addGroupHeaders() || n++ > 25) return; setTimeout(t, 300); })(); }
-      document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", run) : run();
+      function run() {
+        var n = 0;
+        function tryAdd() {
+          if (addGroupHeaders() || n++ > 40) return;
+          setTimeout(tryAdd, 250);
+        }
+        setTimeout(tryAdd, 500);
+      }
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", run);
+      else run();
     })();
+    </script>
 
 # See https://upptime.js.org/docs/configuration for more options
 # - assignees: for downtime issue assignment
