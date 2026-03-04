@@ -57,8 +57,8 @@ status-website:
   # Use baseUrl for GitHub Pages (https://sebsteinig.github.io/uptime-dashboard/)
   baseUrl: /uptime-dashboard
   name: Status Dashboard
-  introTitle: "**Status Dashboard** — Monitoring your websites and APIs"
-  introMessage: This status page tracks the uptime and response times of Copernicus Atmosphere apps, Climate Archive, and related APIs. Powered by [Upptime](https://upptime.js.org) — GitHub Actions, Issues, and Pages.
+  introTitle: "**Status Dashboard** "
+  introMessage: This status page tracks the uptime and response times of selected CAMS apps and services, as well as some private projects. Powered by [Upptime](https://upptime.js.org) — GitHub Actions, Issues, and Pages.
   navbar:
     - title: Status
       href: /uptime-dashboard/
