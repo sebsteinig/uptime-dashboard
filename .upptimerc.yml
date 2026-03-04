@@ -97,6 +97,7 @@ status-website:
 # Response time checks run every 6 hours (0, 6, 12, 18 UTC)
 workflowSchedule:
   responseTime: "0 */6 * * *"
+  uptime: "*/5 * * * *"
 
 # See https://upptime.js.org/docs/configuration for more options
 # - notifications: Slack, Telegram, Discord, email (SMTP/Sendgrid/etc.)
