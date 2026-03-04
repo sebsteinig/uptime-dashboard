@@ -4,43 +4,54 @@
 owner: sebsteinig
 repo: uptime-dashboard
 
+# Assignee receives GitHub email when a downtime issue is opened
+assignees:
+  - sebsteinig
+
 sites:
   # CAMS services (PROD)
   - name: Methane Explorer (PROD)
     url: https://apps.atmosphere.copernicus.eu/methane-explorer/
-  - name: CAMS Data Sites
+  - name: CAMS Data Sites (sites.ecmwf.int)
     url: https://sites.ecmwf.int/data/cams/
     slug: cams-data-sites
-  - name: vAirify
+
+
+  # CAMS services (DEV)
+  - name: vAirify (dashboard)
     url: http://64.225.143.231/city/summary
-  - name: Fire Watch
+  - name: vAirify (API)
+    url: "http://64.225.143.231/api/air-pollutant/measurements?date_from=2026-03-02T12:00:00.000Z&date_to=2026-03-03T12:00:00.000Z&location_type=city&location_names=Brussels"
+    slug: vairify-measurements-api
+  - name: Fire Watch (website)
     url: https://apps.atmosphere.copernicus.eu/fire-watch/
     headers:
       - "Authorization: Basic $FIRE_WATCH_AUTH"
-  - name: GFAS API Health
+  - name: GFAS (API)
     url: https://apps.atmosphere.copernicus.eu/gfas/api/api/health/
-  - name: Zarr Globe
-    url: https://apps.atmosphere.copernicus.eu/zarr-globe
-
-  # CAMS services (DEV)
   - name: Methane Explorer (DEV)
     url: https://apps.copernicus-climate.eu/methane-explorer/
     headers:
       - "Authorization: Basic $Methane_Explorer_DEV_AUTH"
+  - name: Zarr Globe (website)
+    url: https://apps.atmosphere.copernicus.eu/zarr-globe
 
   # Climate Archive
-  - name: Climate Archive
+  - name: Climate Archive (website)
     url: https://climatearchive.org
-  - name: Climate Archive Java API
+  - name: Climate Archive (Java API)
     url: https://api.climatearchive.org:8443/getData?lat=37.10&lon=9.5&model=tfksu
     slug: climate-archive-java-api
-  - name: Climate Archive Flask API
+  - name: Climate Archive (Flask API)
     url: https://data.climatearchive.org/api/get_ts_data_cmip
     method: POST
     headers:
-      - "Content-Type: application/json"
+      - "Content-Type: application/json" 
     body: '{"model_id":"ssp126","location":[37.10,9.5],"variable":"tas","frequency":"ym"}'
     slug: climate-archive-flask-api
+  - name: GPlates Reconstruct (API)
+    url: "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0"
+    slug: gplates-reconstruct-api
 
 status-website:
   # Use baseUrl for GitHub Pages (https://sebsteinig.github.io/uptime-dashboard/)
@@ -50,7 +61,7 @@ status-website:
   introMessage: This status page tracks the uptime and response times of Copernicus Atmosphere apps, Climate Archive, and related APIs. Powered by [Upptime](https://upptime.js.org) — GitHub Actions, Issues, and Pages.
   navbar:
     - title: Status
-      href: /
+      href: /uptime-dashboard/
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   # Pure CSS grouping via ::before on article elements inside section.live-status.
@@ -61,13 +72,13 @@ status-website:
     section.live-status > article:nth-of-type(1) {
       margin-top: 2.5rem;
     }
-    section.live-status > article:nth-of-type(7),
-    section.live-status > article:nth-of-type(8) {
+    section.live-status > article:nth-of-type(3),
+    section.live-status > article:nth-of-type(9) {
       margin-top: 3.5rem;
     }
     section.live-status > article:nth-of-type(1)::before,
-    section.live-status > article:nth-of-type(7)::before,
-    section.live-status > article:nth-of-type(8)::before {
+    section.live-status > article:nth-of-type(3)::before,
+    section.live-status > article:nth-of-type(9)::before {
       position: absolute;
       top: -2.2rem;
       left: 0;
@@ -79,12 +90,14 @@ status-website:
       border-bottom: 2px solid var(--nav-border-bottom-color, #015450);
     }
     section.live-status > article:nth-of-type(1)::before  { content: "CAMS Services (PROD)"; }
-    section.live-status > article:nth-of-type(7)::before  { content: "CAMS Services (DEV)"; }
-    section.live-status > article:nth-of-type(8)::before  { content: "Climate Archive"; }
+    section.live-status > article:nth-of-type(3)::before  { content: "CAMS Services (DEV)"; }
+    section.live-status > article:nth-of-type(9)::before  { content: "Climate Archive"; }
     </style>
 
+# Response time checks run every 6 hours (0, 6, 12, 18 UTC)
+workflowSchedule:
+  responseTime: "0 */6 * * *"
+
 # See https://upptime.js.org/docs/configuration for more options
-# - assignees: for downtime issue assignment
-# - notifications: Slack, email, etc.
-# - workflowSchedule: customize check frequency
+# - notifications: Slack, Telegram, Discord, email (SMTP/Sendgrid/etc.)
 
