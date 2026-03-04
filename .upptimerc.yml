@@ -53,30 +53,34 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  # Pure CSS grouping: uses nth-of-type to target sites by position.
+  # Pure CSS grouping via ::before on article elements inside section.live-status.
   # Sites order: 1-6 = CAMS PROD, 7 = CAMS DEV, 8-10 = Climate Archive.
   # If you add/remove/reorder sites, update the nth-of-type numbers below.
   customHeadHtml: |
     <style>
-    section > a:nth-of-type(7),
-    section > a:nth-of-type(8) {
+    section.live-status > article:nth-of-type(1) {
       margin-top: 2.5rem;
     }
-    section > a:nth-of-type(1)::before,
-    section > a:nth-of-type(7)::before,
-    section > a:nth-of-type(8)::before {
-      display: block;
+    section.live-status > article:nth-of-type(7),
+    section.live-status > article:nth-of-type(8) {
+      margin-top: 3.5rem;
+    }
+    section.live-status > article:nth-of-type(1)::before,
+    section.live-status > article:nth-of-type(7)::before,
+    section.live-status > article:nth-of-type(8)::before {
+      position: absolute;
+      top: -2.2rem;
+      left: 0;
+      right: 0;
       font-size: 1.1rem;
       font-weight: 700;
-      padding-bottom: 0.35rem;
-      margin-bottom: 0.6rem;
-      border-bottom: 2px solid var(--nav-border-bottom-color, rgba(255,255,255,0.15));
-      color: var(--body-text-color, #ccc);
-      letter-spacing: 0.02em;
+      color: var(--body-text-color, #f0ffff);
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid var(--nav-border-bottom-color, #015450);
     }
-    section > a:nth-of-type(1)::before  { content: "CAMS Services (PROD)"; }
-    section > a:nth-of-type(7)::before  { content: "CAMS Services (DEV)"; }
-    section > a:nth-of-type(8)::before  { content: "Climate Archive"; }
+    section.live-status > article:nth-of-type(1)::before  { content: "CAMS Services (PROD)"; }
+    section.live-status > article:nth-of-type(7)::before  { content: "CAMS Services (DEV)"; }
+    section.live-status > article:nth-of-type(8)::before  { content: "Climate Archive"; }
     </style>
 
 # See https://upptime.js.org/docs/configuration for more options
