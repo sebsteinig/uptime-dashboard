@@ -95,19 +95,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "gfas-api",
     "status": "up",
-    "uptime": "98.92%",
-    "uptimeDay": "98.92%",
-    "uptimeWeek": "98.92%",
-    "uptimeMonth": "98.92%",
-    "uptimeYear": "98.92%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 1214,
     "timeDay": 1214,
     "timeWeek": 1214,
     "timeMonth": 1214,
     "timeYear": 1214,
-    "dailyMinutesDown": {
-      "2026-03-05": 14
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Methane Explorer (DEV)",
@@ -115,18 +113,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.copernicus-climate.eu.ico",
     "slug": "methane-explorer-dev",
     "status": "down",
-    "uptime": "48.07%",
-    "uptimeDay": "20.02%",
-    "uptimeWeek": "48.07%",
-    "uptimeMonth": "48.07%",
-    "uptimeYear": "48.07%",
+    "uptime": "45.92%",
+    "uptimeDay": "12.82%",
+    "uptimeWeek": "45.92%",
+    "uptimeMonth": "45.92%",
+    "uptimeYear": "45.92%",
     "time": 925,
     "timeDay": 896,
     "timeWeek": 925,
     "timeMonth": 925,
     "timeYear": 925,
     "dailyMinutesDown": {
-      "2026-03-05": 388,
+      "2026-03-05": 492,
       "2026-03-04": 763
     }
   },
@@ -207,17 +205,19 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.99%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 1299,
     "timeDay": 1299,
     "timeWeek": 1299,
     "timeMonth": 1299,
     "timeYear": 1299,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-03-05": 0
+    }
   }
 ]
