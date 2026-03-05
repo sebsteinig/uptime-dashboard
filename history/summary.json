@@ -113,18 +113,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.copernicus-climate.eu.ico",
     "slug": "methane-explorer-dev",
     "status": "down",
-    "uptime": "41.00%",
+    "uptime": "39.76%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "41.00%",
-    "uptimeMonth": "41.00%",
-    "uptimeYear": "41.00%",
+    "uptimeWeek": "39.76%",
+    "uptimeMonth": "39.76%",
+    "uptimeYear": "39.76%",
     "time": 916,
     "timeDay": 873,
     "timeWeek": 916,
     "timeMonth": 916,
     "timeYear": 916,
     "dailyMinutesDown": {
-      "2026-03-05": 771,
+      "2026-03-05": 852,
       "2026-03-04": 763
     }
   },
@@ -205,19 +205,19 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "down",
-    "uptime": "97.63%",
-    "uptimeDay": "97.27%",
-    "uptimeWeek": "97.63%",
-    "uptimeMonth": "97.63%",
-    "uptimeYear": "97.63%",
-    "time": 1231,
-    "timeDay": 1521,
-    "timeWeek": 1231,
-    "timeMonth": 1231,
-    "timeYear": 1231,
+    "status": "up",
+    "uptime": "93.10%",
+    "uptimeDay": "91.66%",
+    "uptimeWeek": "93.10%",
+    "uptimeMonth": "93.10%",
+    "uptimeYear": "93.10%",
+    "time": 2768,
+    "timeDay": 4290,
+    "timeWeek": 2768,
+    "timeMonth": 2768,
+    "timeYear": 2768,
     "dailyMinutesDown": {
-      "2026-03-05": 39
+      "2026-03-05": 120
     }
   }
 ]
