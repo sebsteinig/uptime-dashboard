@@ -32,7 +32,7 @@ sites:
   - name: Methane Explorer (DEV)
     url: https://apps.copernicus-climate.eu/methane-explorer/
     headers:
-      - "Authorization: Basic $Methane_Explorer_DEV_AUTH"
+      - "Authorization: Basic $FIRE_WATCH_AUTH"
   - name: Zarr Globe (website)
     url: https://apps.atmosphere.copernicus.eu/zarr-globe
 
