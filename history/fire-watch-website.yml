@@ -1,7 +1,7 @@
 url: https://apps.atmosphere.copernicus.eu/fire-watch/
-status: down
-code: 503
-responseTime: 120
-lastUpdated: 2026-04-04T06:32:56.976Z
+status: up
+code: 200
+responseTime: 437
+lastUpdated: 2026-04-04T06:59:22.985Z
 startTime: 2026-03-04T09:10:25.079Z
 generator: Upptime <https://github.com/upptime/upptime>
