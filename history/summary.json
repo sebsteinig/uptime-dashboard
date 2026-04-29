@@ -12,8 +12,8 @@
     "uptimeYear": "99.97%",
     "time": 642,
     "timeDay": 507,
-    "timeWeek": 1108,
-    "timeMonth": 700,
+    "timeWeek": 1133,
+    "timeMonth": 701,
     "timeYear": 642,
     "dailyMinutesDown": {
       "2026-04-24": 25
@@ -32,7 +32,7 @@
     "uptimeYear": "99.64%",
     "time": 1495,
     "timeDay": 2281,
-    "timeWeek": 1557,
+    "timeWeek": 1584,
     "timeMonth": 1344,
     "timeYear": 1495,
     "dailyMinutesDown": {
@@ -56,7 +56,7 @@
     "uptimeYear": "100.00%",
     "time": 261,
     "timeDay": 296,
-    "timeWeek": 271,
+    "timeWeek": 274,
     "timeMonth": 257,
     "timeYear": 261,
     "dailyMinutesDown": {}
@@ -74,7 +74,7 @@
     "uptimeYear": "100.00%",
     "time": 792,
     "timeDay": 991,
-    "timeWeek": 894,
+    "timeWeek": 898,
     "timeMonth": 842,
     "timeYear": 792,
     "dailyMinutesDown": {}
@@ -92,8 +92,8 @@
     "uptimeYear": "99.88%",
     "time": 226,
     "timeDay": 148,
-    "timeWeek": 148,
-    "timeMonth": 290,
+    "timeWeek": 149,
+    "timeMonth": 291,
     "timeYear": 226,
     "dailyMinutesDown": {
       "2026-04-04": 45,
@@ -113,7 +113,7 @@
     "uptimeYear": "99.23%",
     "time": 1231,
     "timeDay": 1110,
-    "timeWeek": 1171,
+    "timeWeek": 1182,
     "timeMonth": 1121,
     "timeYear": 1231,
     "dailyMinutesDown": {
@@ -141,15 +141,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.copernicus-climate.eu.ico",
     "slug": "methane-explorer-dev",
     "status": "up",
-    "uptime": "96.62%",
+    "uptime": "96.63%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "96.62%",
+    "uptimeYear": "96.63%",
     "time": 962,
     "timeDay": 1105,
-    "timeWeek": 965,
-    "timeMonth": 983,
+    "timeWeek": 973,
+    "timeMonth": 985,
     "timeYear": 962,
     "dailyMinutesDown": {
       "2026-03-06": 528,
@@ -170,7 +170,7 @@
     "uptimeYear": "100.00%",
     "time": 266,
     "timeDay": 289,
-    "timeWeek": 275,
+    "timeWeek": 277,
     "timeMonth": 263,
     "timeYear": 266,
     "dailyMinutesDown": {}
@@ -251,8 +251,8 @@
     "uptimeYear": "97.45%",
     "time": 1697,
     "timeDay": 1602,
-    "timeWeek": 1045,
-    "timeMonth": 1348,
+    "timeWeek": 1044,
+    "timeMonth": 1350,
     "timeYear": 1697,
     "dailyMinutesDown": {
       "2026-04-28": 29,
