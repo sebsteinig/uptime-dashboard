@@ -1,7 +1,7 @@
 url: https://apps.atmosphere.copernicus.eu/gfas/api/api/anomalies/?variable=cfire&start_date=2026-01-01&end_date=2026-01-31&adm0=ALL&all_years=true&aggregation=SUM&timeout=120
 status: up
 code: 200
-responseTime: 961
-lastUpdated: 2026-05-01T18:19:19.202Z
+responseTime: 971
+lastUpdated: 2026-05-02T00:20:55.706Z
 startTime: 2026-03-04T09:10:25.656Z
 generator: Upptime <https://github.com/upptime/upptime>
