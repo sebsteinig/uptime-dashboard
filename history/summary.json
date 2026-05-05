@@ -13,7 +13,7 @@
     "time": 635,
     "timeDay": 571,
     "timeWeek": 553,
-    "timeMonth": 706,
+    "timeMonth": 707,
     "timeYear": 635,
     "dailyMinutesDown": {
       "2026-04-24": 25
@@ -33,7 +33,7 @@
     "time": 1609,
     "timeDay": 1128,
     "timeWeek": 2574,
-    "timeMonth": 1644,
+    "timeMonth": 1646,
     "timeYear": 1609,
     "dailyMinutesDown": {
       "2026-05-01": 72,
@@ -78,7 +78,7 @@
     "time": 795,
     "timeDay": 712,
     "timeWeek": 849,
-    "timeMonth": 844,
+    "timeMonth": 842,
     "timeYear": 795,
     "dailyMinutesDown": {}
   },
@@ -117,7 +117,7 @@
     "time": 1214,
     "timeDay": 951,
     "timeWeek": 1051,
-    "timeMonth": 1098,
+    "timeMonth": 1097,
     "timeYear": 1214,
     "dailyMinutesDown": {
       "2026-04-25": 19,
@@ -152,7 +152,7 @@
     "time": 954,
     "timeDay": 704,
     "timeWeek": 911,
-    "timeMonth": 980,
+    "timeMonth": 975,
     "timeYear": 954,
     "dailyMinutesDown": {
       "2026-03-06": 528,
@@ -192,7 +192,7 @@
     "time": 475,
     "timeDay": 440,
     "timeWeek": 461,
-    "timeMonth": 436,
+    "timeMonth": 433,
     "timeYear": 475,
     "dailyMinutesDown": {
       "2026-03-30": 24,
@@ -213,7 +213,7 @@
     "time": 493,
     "timeDay": 426,
     "timeWeek": 465,
-    "timeMonth": 458,
+    "timeMonth": 457,
     "timeYear": 493,
     "dailyMinutesDown": {
       "2026-05-04": 152,
@@ -235,7 +235,7 @@
     "time": 460,
     "timeDay": 450,
     "timeWeek": 437,
-    "timeMonth": 431,
+    "timeMonth": 430,
     "timeYear": 460,
     "dailyMinutesDown": {
       "2026-03-30": 23,
@@ -248,18 +248,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
     "status": "down",
-    "uptime": "97.40%",
-    "uptimeDay": "90.83%",
-    "uptimeWeek": "97.13%",
-    "uptimeMonth": "97.92%",
-    "uptimeYear": "97.40%",
+    "uptime": "97.29%",
+    "uptimeDay": "83.71%",
+    "uptimeWeek": "96.11%",
+    "uptimeMonth": "97.69%",
+    "uptimeYear": "97.29%",
     "time": 1634,
     "timeDay": 1022,
     "timeWeek": 1094,
-    "timeMonth": 1086,
+    "timeMonth": 1087,
     "timeYear": 1634,
     "dailyMinutesDown": {
-      "2026-05-04": 131,
+      "2026-05-05": 20,
+      "2026-05-04": 214,
       "2026-05-03": 81,
       "2026-05-02": 47,
       "2026-04-28": 29,
