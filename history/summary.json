@@ -13,7 +13,7 @@
     "time": 625,
     "timeDay": 700,
     "timeWeek": 598,
-    "timeMonth": 588,
+    "timeMonth": 587,
     "timeYear": 625,
     "dailyMinutesDown": {
       "2026-04-24": 25
@@ -33,7 +33,7 @@
     "time": 1613,
     "timeDay": 9584,
     "timeWeek": 2395,
-    "timeMonth": 1852,
+    "timeMonth": 1855,
     "timeYear": 1613,
     "dailyMinutesDown": {
       "2026-03-10": 23,
@@ -78,7 +78,7 @@
     "time": 826,
     "timeDay": 958,
     "timeWeek": 876,
-    "timeMonth": 905,
+    "timeMonth": 906,
     "timeYear": 826,
     "dailyMinutesDown": {}
   },
@@ -96,7 +96,7 @@
     "time": 287,
     "timeDay": 586,
     "timeWeek": 565,
-    "timeMonth": 390,
+    "timeMonth": 393,
     "timeYear": 287,
     "dailyMinutesDown": {
       "2026-03-31": 50,
@@ -117,7 +117,7 @@
     "time": 1265,
     "timeDay": 1517,
     "timeWeek": 1439,
-    "timeMonth": 1323,
+    "timeMonth": 1325,
     "timeYear": 1265,
     "dailyMinutesDown": {
       "2026-03-12": 63,
@@ -156,7 +156,7 @@
     "time": 939,
     "timeDay": 798,
     "timeWeek": 894,
-    "timeMonth": 910,
+    "timeMonth": 907,
     "timeYear": 939,
     "dailyMinutesDown": {
       "2026-03-06": 528,
@@ -178,7 +178,7 @@
     "time": 426,
     "timeDay": 1238,
     "timeWeek": 1036,
-    "timeMonth": 715,
+    "timeMonth": 719,
     "timeYear": 426,
     "dailyMinutesDown": {}
   },
@@ -252,15 +252,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
     "status": "up",
-    "uptime": "96.63%",
+    "uptime": "96.64%",
     "uptimeDay": "94.00%",
     "uptimeWeek": "98.03%",
-    "uptimeMonth": "95.22%",
-    "uptimeYear": "96.63%",
+    "uptimeMonth": "95.43%",
+    "uptimeYear": "96.64%",
     "time": 1639,
     "timeDay": 12961,
     "timeWeek": 2660,
-    "timeMonth": 1430,
+    "timeMonth": 1439,
     "timeYear": 1639,
     "dailyMinutesDown": {
       "2026-03-05": 172,
