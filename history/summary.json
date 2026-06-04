@@ -251,17 +251,17 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "down",
-    "uptime": "96.91%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "99.79%",
-    "uptimeMonth": "95.83%",
-    "uptimeYear": "96.91%",
-    "time": 1731,
-    "timeDay": 1529,
-    "timeWeek": 1770,
-    "timeMonth": 1942,
-    "timeYear": 1731,
+    "status": "up",
+    "uptime": "96.86%",
+    "uptimeDay": "95.56%",
+    "uptimeWeek": "99.16%",
+    "uptimeMonth": "95.73%",
+    "uptimeYear": "96.86%",
+    "time": 1730,
+    "timeDay": 1430,
+    "timeWeek": 1746,
+    "timeMonth": 1941,
+    "timeYear": 1730,
     "dailyMinutesDown": {
       "2026-03-05": 172,
       "2026-03-07": 17,
@@ -307,7 +307,7 @@
       "2026-05-25": 42,
       "2026-05-27": 92,
       "2026-05-30": 21,
-      "2026-06-04": 0
+      "2026-06-04": 64
     }
   }
 ]
