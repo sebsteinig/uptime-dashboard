@@ -1,7 +1,7 @@
 url: https://api.climatearchive.org:8443/getData?lat=37.10&lon=9.5&model=tfksu
 status: up
 code: 200
-responseTime: 534
-lastUpdated: 2026-06-05T18:35:41.058Z
+responseTime: 424
+lastUpdated: 2026-06-06T00:27:59.984Z
 startTime: 2026-03-03T18:58:29.647Z
 generator: Upptime <https://github.com/upptime/upptime>
