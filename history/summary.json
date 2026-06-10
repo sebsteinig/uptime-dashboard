@@ -12,7 +12,7 @@
     "uptimeYear": "99.98%",
     "time": 625,
     "timeDay": 656,
-    "timeWeek": 636,
+    "timeWeek": 638,
     "timeMonth": 608,
     "timeYear": 625,
     "dailyMinutesDown": {
@@ -32,7 +32,7 @@
     "uptimeYear": "99.53%",
     "time": 1594,
     "timeDay": 2054,
-    "timeWeek": 1301,
+    "timeWeek": 1302,
     "timeMonth": 1627,
     "timeYear": 1594,
     "dailyMinutesDown": {
@@ -60,7 +60,7 @@
     "uptimeYear": "100.00%",
     "time": 259,
     "timeDay": 268,
-    "timeWeek": 246,
+    "timeWeek": 243,
     "timeMonth": 254,
     "timeYear": 259,
     "dailyMinutesDown": {}
@@ -78,7 +78,7 @@
     "uptimeYear": "100.00%",
     "time": 849,
     "timeDay": 1072,
-    "timeWeek": 915,
+    "timeWeek": 907,
     "timeMonth": 944,
     "timeYear": 849,
     "dailyMinutesDown": {}
@@ -96,7 +96,7 @@
     "uptimeYear": "99.93%",
     "time": 344,
     "timeDay": 471,
-    "timeWeek": 513,
+    "timeWeek": 511,
     "timeMonth": 592,
     "timeYear": 344,
     "dailyMinutesDown": {
@@ -117,7 +117,7 @@
     "uptimeYear": "99.43%",
     "time": 1313,
     "timeDay": 1542,
-    "timeWeek": 1552,
+    "timeWeek": 1550,
     "timeMonth": 1516,
     "timeYear": 1313,
     "dailyMinutesDown": {
@@ -157,7 +157,7 @@
     "uptimeYear": "98.08%",
     "time": 943,
     "timeDay": 863,
-    "timeWeek": 891,
+    "timeWeek": 878,
     "timeMonth": 931,
     "timeYear": 943,
     "dailyMinutesDown": {
@@ -179,7 +179,7 @@
     "uptimeYear": "100.00%",
     "time": 526,
     "timeDay": 985,
-    "timeWeek": 943,
+    "timeWeek": 937,
     "timeMonth": 1011,
     "timeYear": 526,
     "dailyMinutesDown": {}
@@ -197,7 +197,7 @@
     "uptimeYear": "99.75%",
     "time": 449,
     "timeDay": 386,
-    "timeWeek": 393,
+    "timeWeek": 391,
     "timeMonth": 404,
     "timeYear": 449,
     "dailyMinutesDown": {
@@ -218,7 +218,7 @@
     "uptimeYear": "99.65%",
     "time": 470,
     "timeDay": 415,
-    "timeWeek": 413,
+    "timeWeek": 412,
     "timeMonth": 430,
     "timeYear": 470,
     "dailyMinutesDown": {
@@ -240,7 +240,7 @@
     "uptimeYear": "99.75%",
     "time": 444,
     "timeDay": 403,
-    "timeWeek": 410,
+    "timeWeek": 404,
     "timeMonth": 420,
     "timeYear": 444,
     "dailyMinutesDown": {
@@ -253,17 +253,17 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "down",
-    "uptime": "97.04%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "99.36%",
-    "uptimeMonth": "98.86%",
-    "uptimeYear": "97.04%",
-    "time": 1706,
-    "timeDay": 1532,
-    "timeWeek": 1253,
-    "timeMonth": 1979,
-    "timeYear": 1706,
+    "status": "up",
+    "uptime": "97.01%",
+    "uptimeDay": "97.00%",
+    "uptimeWeek": "98.94%",
+    "uptimeMonth": "98.77%",
+    "uptimeYear": "97.01%",
+    "time": 1704,
+    "timeDay": 1417,
+    "timeWeek": 1265,
+    "timeMonth": 1972,
+    "timeYear": 1704,
     "dailyMinutesDown": {
       "2026-03-05": 172,
       "2026-03-07": 17,
@@ -310,7 +310,7 @@
       "2026-05-27": 92,
       "2026-05-30": 21,
       "2026-06-04": 64,
-      "2026-06-10": 0
+      "2026-06-10": 43
     }
   }
 ]
