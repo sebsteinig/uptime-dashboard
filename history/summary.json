@@ -12,7 +12,7 @@
     "uptimeYear": "99.97%",
     "time": 617,
     "timeDay": 452,
-    "timeWeek": 557,
+    "timeWeek": 556,
     "timeMonth": 602,
     "timeYear": 617,
     "dailyMinutesDown": {
@@ -26,14 +26,14 @@
     "icon": "https://icons.duckduckgo.com/ip3/sites.ecmwf.int.ico",
     "slug": "cams-data-sites",
     "status": "down",
-    "uptime": "99.59%",
-    "uptimeDay": "98.35%",
-    "uptimeWeek": "99.76%",
-    "uptimeMonth": "99.46%",
-    "uptimeYear": "99.59%",
+    "uptime": "99.58%",
+    "uptimeDay": "97.67%",
+    "uptimeWeek": "99.67%",
+    "uptimeMonth": "99.44%",
+    "uptimeYear": "99.58%",
     "time": 1563,
     "timeDay": 1117,
-    "timeWeek": 1214,
+    "timeWeek": 1231,
     "timeMonth": 1406,
     "timeYear": 1563,
     "dailyMinutesDown": {
@@ -46,7 +46,7 @@
       "2026-04-30": 41,
       "2026-05-01": 72,
       "2026-06-10": 212,
-      "2026-06-28": 24
+      "2026-06-28": 34
     }
   },
   {
@@ -62,7 +62,7 @@
     "uptimeYear": "100.00%",
     "time": 259,
     "timeDay": 221,
-    "timeWeek": 261,
+    "timeWeek": 264,
     "timeMonth": 257,
     "timeYear": 259,
     "dailyMinutesDown": {}
@@ -80,7 +80,7 @@
     "uptimeYear": "100.00%",
     "time": 868,
     "timeDay": 833,
-    "timeWeek": 973,
+    "timeWeek": 982,
     "timeMonth": 956,
     "timeYear": 868,
     "dailyMinutesDown": {}
@@ -92,19 +92,18 @@
     "slug": "fire-watch-website",
     "status": "up",
     "uptime": "99.94%",
-    "uptimeDay": "99.27%",
-    "uptimeWeek": "99.90%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "99.94%",
     "time": 372,
     "timeDay": 520,
-    "timeWeek": 499,
+    "timeWeek": 497,
     "timeMonth": 572,
     "timeYear": 372,
     "dailyMinutesDown": {
       "2026-03-31": 50,
-      "2026-04-04": 45,
-      "2026-06-28": 11
+      "2026-04-04": 45
     }
   },
   {
@@ -112,17 +111,17 @@
     "url": "https://apps.atmosphere.copernicus.eu/gfas/api/api/anomalies/?variable=cfire&start_date=2026-01-01&end_date=2026-01-31&adm0=ALL&all_years=true&aggregation=SUM&timeout=120",
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "gfas-api",
-    "status": "down",
-    "uptime": "99.40%",
-    "uptimeDay": "94.86%",
-    "uptimeWeek": "98.37%",
-    "uptimeMonth": "99.43%",
-    "uptimeYear": "99.40%",
-    "time": 1406,
-    "timeDay": 1508,
-    "timeWeek": 2442,
-    "timeMonth": 1759,
-    "timeYear": 1406,
+    "status": "up",
+    "uptime": "99.39%",
+    "uptimeDay": "94.21%",
+    "uptimeWeek": "98.27%",
+    "uptimeMonth": "99.41%",
+    "uptimeYear": "99.39%",
+    "time": 1440,
+    "timeDay": 5612,
+    "timeWeek": 3020,
+    "timeMonth": 1886,
+    "timeYear": 1440,
     "dailyMinutesDown": {
       "2026-03-12": 63,
       "2026-03-13": 23,
@@ -148,7 +147,7 @@
       "2026-06-16": 39,
       "2026-06-23": 46,
       "2026-06-27": 45,
-      "2026-06-28": 74
+      "2026-06-28": 83
     }
   },
   {
@@ -164,7 +163,7 @@
     "uptimeYear": "98.38%",
     "time": 929,
     "timeDay": 753,
-    "timeWeek": 844,
+    "timeWeek": 849,
     "timeMonth": 889,
     "timeYear": 929,
     "dailyMinutesDown": {
@@ -179,18 +178,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "zarr-globe-website",
     "status": "down",
-    "uptime": "86.23%",
+    "uptime": "86.22%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
-    "uptimeMonth": "47.42%",
-    "uptimeYear": "86.23%",
+    "uptimeMonth": "47.40%",
+    "uptimeYear": "86.22%",
     "time": 549,
     "timeDay": 549,
-    "timeWeek": 615,
+    "timeWeek": 622,
     "timeMonth": 813,
     "timeYear": 549,
     "dailyMinutesDown": {
-      "2026-06-28": 752,
+      "2026-06-28": 762,
       "2026-06-27": 1440,
       "2026-06-26": 1440,
       "2026-06-25": 1440,
@@ -222,7 +221,7 @@
     "uptimeYear": "99.79%",
     "time": 446,
     "timeDay": 414,
-    "timeWeek": 432,
+    "timeWeek": 433,
     "timeMonth": 420,
     "timeYear": 446,
     "dailyMinutesDown": {
@@ -243,7 +242,7 @@
     "uptimeYear": "99.70%",
     "time": 467,
     "timeDay": 432,
-    "timeWeek": 464,
+    "timeWeek": 466,
     "timeMonth": 440,
     "timeYear": 467,
     "dailyMinutesDown": {
@@ -265,7 +264,7 @@
     "uptimeYear": "99.79%",
     "time": 443,
     "timeDay": 413,
-    "timeWeek": 442,
+    "timeWeek": 443,
     "timeMonth": 430,
     "timeYear": 443,
     "dailyMinutesDown": {
@@ -286,7 +285,7 @@
     "uptimeYear": "97.39%",
     "time": 1656,
     "timeDay": 986,
-    "timeWeek": 1073,
+    "timeWeek": 1075,
     "timeMonth": 1435,
     "timeYear": 1656,
     "dailyMinutesDown": {
