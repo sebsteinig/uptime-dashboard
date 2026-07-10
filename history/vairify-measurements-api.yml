@@ -1,7 +1,7 @@
 url: http://64.225.143.231/api/air-pollutant/measurements?date_from=2026-03-02T12:00:00.000Z&date_to=2026-03-03T12:00:00.000Z&location_type=city&location_names=Brussels
 status: up
 code: 200
-responseTime: 953
-lastUpdated: 2026-07-10T12:42:37.698Z
+responseTime: 1033
+lastUpdated: 2026-07-10T18:27:40.544Z
 startTime: 2026-03-04T09:10:23.871Z
 generator: Upptime <https://github.com/upptime/upptime>
