@@ -184,7 +184,7 @@
     "uptime": "80.94%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "26.51%",
+    "uptimeMonth": "26.59%",
     "uptimeYear": "80.94%",
     "time": 579,
     "timeDay": 921,
@@ -295,17 +295,17 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "down",
-    "uptime": "97.49%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "98.34%",
-    "uptimeMonth": "98.68%",
-    "uptimeYear": "97.49%",
-    "time": 1706,
+    "status": "up",
+    "uptime": "97.47%",
+    "uptimeDay": "97.57%",
+    "uptimeWeek": "98.00%",
+    "uptimeMonth": "98.60%",
+    "uptimeYear": "97.47%",
+    "time": 1705,
     "timeDay": 947,
-    "timeWeek": 2701,
-    "timeMonth": 1705,
-    "timeYear": 1706,
+    "timeWeek": 2648,
+    "timeMonth": 1699,
+    "timeYear": 1705,
     "dailyMinutesDown": {
       "2026-03-05": 172,
       "2026-03-07": 17,
@@ -364,7 +364,7 @@
       "2026-07-09": 76,
       "2026-07-10": 45,
       "2026-07-13": 23,
-      "2026-07-15": 1
+      "2026-07-15": 35
     }
   }
 ]
