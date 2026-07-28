@@ -91,11 +91,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "fire-watch-website",
     "status": "down",
-    "uptime": "99.64%",
-    "uptimeDay": "53.82%",
-    "uptimeWeek": "93.40%",
-    "uptimeMonth": "98.48%",
-    "uptimeYear": "99.64%",
+    "uptime": "99.58%",
+    "uptimeDay": "45.25%",
+    "uptimeWeek": "92.18%",
+    "uptimeMonth": "98.20%",
+    "uptimeYear": "99.58%",
     "time": 402,
     "timeDay": 679,
     "timeWeek": 600,
@@ -104,7 +104,7 @@
     "dailyMinutesDown": {
       "2026-03-31": 50,
       "2026-04-04": 45,
-      "2026-07-28": 665
+      "2026-07-28": 788
     }
   },
   {
@@ -183,11 +183,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "zarr-globe-website",
     "status": "up",
-    "uptime": "82.67%",
+    "uptime": "82.68%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "70.23%",
-    "uptimeYear": "82.67%",
+    "uptimeMonth": "70.51%",
+    "uptimeYear": "82.68%",
     "time": 612,
     "timeDay": 820,
     "timeWeek": 976,
@@ -249,11 +249,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.climatearchive.org.ico",
     "slug": "climate-archive-java-api",
     "status": "up",
-    "uptime": "96.42%",
+    "uptime": "96.43%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "83.85%",
-    "uptimeYear": "96.42%",
+    "uptimeYear": "96.43%",
     "time": 466,
     "timeDay": 440,
     "timeWeek": 476,
@@ -297,16 +297,16 @@
     "url": "https://gws.gplates.org/reconstruct/reconstruct_points/?lats=49&lons=6&times=102.6,97.2,91.9,86.7,80.8,75,69,66,61,56,51.9,44.5,39.5,35.9,31,25.6,19.5,14.9,10.5,3.1,0",
     "icon": "https://icons.duckduckgo.com/ip3/gws.gplates.org.ico",
     "slug": "gplates-reconstruct-api",
-    "status": "up",
+    "status": "down",
     "uptime": "97.53%",
-    "uptimeDay": "95.88%",
-    "uptimeWeek": "97.69%",
+    "uptimeDay": "95.83%",
+    "uptimeWeek": "97.68%",
     "uptimeMonth": "98.06%",
     "uptimeYear": "97.53%",
     "time": 1794,
     "timeDay": 1816,
     "timeWeek": 3577,
-    "timeMonth": 2316,
+    "timeMonth": 2326,
     "timeYear": 1794,
     "dailyMinutesDown": {
       "2026-03-05": 172,
@@ -375,7 +375,7 @@
       "2026-07-25": 37,
       "2026-07-26": 20,
       "2026-07-27": 74,
-      "2026-07-28": 59
+      "2026-07-28": 60
     }
   }
 ]
