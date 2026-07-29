@@ -91,11 +91,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "fire-watch-website",
     "status": "down",
-    "uptime": "99.55%",
-    "uptimeDay": "40.73%",
-    "uptimeWeek": "91.53%",
-    "uptimeMonth": "98.05%",
-    "uptimeYear": "99.55%",
+    "uptime": "99.53%",
+    "uptimeDay": "38.28%",
+    "uptimeWeek": "91.18%",
+    "uptimeMonth": "97.97%",
+    "uptimeYear": "99.53%",
     "time": 402,
     "timeDay": 679,
     "timeWeek": 600,
@@ -104,7 +104,8 @@
     "dailyMinutesDown": {
       "2026-03-31": 50,
       "2026-04-04": 45,
-      "2026-07-28": 853
+      "2026-07-29": 18,
+      "2026-07-28": 871
     }
   },
   {
@@ -186,7 +187,7 @@
     "uptime": "82.69%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "70.66%",
+    "uptimeMonth": "70.74%",
     "uptimeYear": "82.69%",
     "time": 612,
     "timeDay": 820,
