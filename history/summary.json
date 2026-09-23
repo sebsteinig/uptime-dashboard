@@ -104,7 +104,7 @@
     "dailyMinutesDown": {
       "2026-03-31": 50,
       "2026-04-04": 45,
-      "2026-09-23": 1130,
+      "2026-09-23": 1138,
       "2026-09-22": 1440,
       "2026-09-21": 1440,
       "2026-09-20": 1440,
@@ -169,16 +169,16 @@
     "url": "https://apps.atmosphere.copernicus.eu/gfas/api/api/anomalies/?variable=cfire&start_date=2026-01-01&end_date=2026-01-31&adm0=ALL&all_years=true&aggregation=SUM&timeout=120",
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "gfas-api",
-    "status": "down",
+    "status": "up",
     "uptime": "99.52%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.55%",
+    "uptimeDay": "99.47%",
+    "uptimeWeek": "99.92%",
+    "uptimeMonth": "99.53%",
     "uptimeYear": "99.52%",
     "time": 1504,
-    "timeDay": 1545,
-    "timeWeek": 1517,
-    "timeMonth": 1516,
+    "timeDay": 1519,
+    "timeWeek": 1512,
+    "timeMonth": 1515,
     "timeYear": 1504,
     "dailyMinutesDown": {
       "2026-03-12": 63,
@@ -214,7 +214,7 @@
       "2026-08-27": 143,
       "2026-09-08": 24,
       "2026-09-10": 30,
-      "2026-09-23": 1
+      "2026-09-23": 8
     }
   },
   {
@@ -331,7 +331,7 @@
       "2026-07-10": 1440,
       "2026-07-09": 1440,
       "2026-07-08": 203,
-      "2026-09-23": 1130,
+      "2026-09-23": 1138,
       "2026-09-22": 1440,
       "2026-09-21": 1440,
       "2026-09-20": 1440,
