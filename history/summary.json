@@ -105,7 +105,7 @@
     "dailyMinutesDown": {
       "2026-03-31": 50,
       "2026-04-04": 45,
-      "2026-11-09": 953,
+      "2026-11-09": 962,
       "2026-11-08": 1440,
       "2026-11-07": 1440,
       "2026-11-06": 1440,
@@ -295,17 +295,17 @@
     "url": "https://apps.atmosphere.copernicus.eu/zarr-globe",
     "icon": "https://icons.duckduckgo.com/ip3/apps.atmosphere.copernicus.eu.ico",
     "slug": "zarr-globe-website",
-    "status": "up",
+    "status": "down",
     "uptime": "89.84%",
-    "uptimeDay": "97.70%",
-    "uptimeWeek": "99.67%",
+    "uptimeDay": "97.64%",
+    "uptimeWeek": "99.66%",
     "uptimeMonth": "99.92%",
     "uptimeYear": "89.84%",
-    "time": 792,
-    "timeDay": 1307,
-    "timeWeek": 1325,
-    "timeMonth": 1238,
-    "timeYear": 792,
+    "time": 795,
+    "timeDay": 1603,
+    "timeWeek": 1405,
+    "timeMonth": 1259,
+    "timeYear": 795,
     "dailyMinutesDown": {
       "2026-07-07": 1315,
       "2026-07-06": 1440,
@@ -334,7 +334,7 @@
       "2026-06-13": 1440,
       "2026-06-12": 679,
       "2026-10-07": 18,
-      "2026-11-09": 33
+      "2026-11-09": 34
     }
   },
   {
@@ -384,7 +384,7 @@
       "2026-07-10": 1440,
       "2026-07-09": 1440,
       "2026-07-08": 203,
-      "2026-11-09": 954,
+      "2026-11-09": 962,
       "2026-11-08": 1440,
       "2026-11-07": 1440,
       "2026-11-06": 1440,
