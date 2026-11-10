@@ -1,7 +1,7 @@
 url: https://apps.copernicus-climate.eu/methane-explorer/
-status: down
-code: 504
-responseTime: 15698
-lastUpdated: 2026-11-10T12:04:57.454Z
+status: up
+code: 200
+responseTime: 6273
+lastUpdated: 2026-11-10T15:23:32.945Z
 startTime: 2026-03-03T17:30:30.822Z
 generator: Upptime <https://github.com/upptime/upptime>
