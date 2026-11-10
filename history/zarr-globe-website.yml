@@ -1,7 +1,7 @@
 url: https://apps.atmosphere.copernicus.eu/zarr-globe
-status: up
-code: 200
-responseTime: 3479
-lastUpdated: 2026-11-10T06:58:36.808Z
+status: down
+code: 504
+responseTime: 20819
+lastUpdated: 2026-11-10T09:18:28.530Z
 startTime: 2026-03-04T09:10:27.271Z
 generator: Upptime <https://github.com/upptime/upptime>
